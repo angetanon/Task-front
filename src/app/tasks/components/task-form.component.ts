@@ -120,6 +120,7 @@ export class TaskFormComponent implements OnInit, AfterViewInit {
       description: v.description.trim() || null,
       status: v.status,
       priority: v.priority,
+      createdAt: new Date().toISOString()
     });
   }
 }

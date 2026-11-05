@@ -11,8 +11,8 @@ export interface Task {
   createdAt: string;
 }
 
-/** Ce que le formulaire envoie : l'id et la date sont gérés par le serveur. */
-export type TaskPayload = Pick<Task, 'title' | 'description' | 'status' | 'priority'>;
+/** Ce que le formulaire envoie : l'id est géré par le serveur. */
+export type TaskPayload = Pick<Task, 'title' | 'description' | 'status' | 'priority' | 'createdAt'>;
 
 export interface ApiError {
   status: number;
